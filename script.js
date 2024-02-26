@@ -4,7 +4,7 @@ function mincost(arr)
 // return the min cost
   let sum=0;
 	while(arr.length>1){
-		arr.sort();
+		arr.sort((a,b)=>a-b);
 		let a = arr.shift();
 		let b = arr.shift();
 		sum+=a+b;
